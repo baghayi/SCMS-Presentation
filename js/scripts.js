@@ -84,4 +84,4 @@ var Slides = {
 
 // Let's do this!
 // Pass the total number of slides as an argument.
-Slides.init(25);
+Slides.init(26);
