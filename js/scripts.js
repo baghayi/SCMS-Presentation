@@ -71,10 +71,15 @@ var Slides = {
    },
 
    animate : function() {
-      Slides 
-         .container
-         .children()
-            .css('-webkit-transform', 'translateX(' + Slides.translateAmount + 'px)');
+      var childern = Slides.container.children();
+
+         childern.css('transform', 'translateX(' + Slides.translateAmount + 'px)');
+         childern.css('OTransform', 'translateX(' + Slides.translateAmount + 'px)');
+         childern.css('WebkitTransform', 'translateX(' + Slides.translateAmount + 'px)');
+         childern.css('MozTransform', 'translateX(' + Slides.translateAmount + 'px)');
+         childern.css('msTransform', 'translateX(' + Slides.translateAmount + 'px)');
+
+
    },
 
    updateHash : function() {
